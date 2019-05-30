@@ -1,0 +1,28 @@
+﻿
+@using Clinic.Models.Enums @using Clinic.Models
+@model IEnumerable<Donor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div class="row">
+    @using (Ajax.BeginForm("PartialIndex", "Donors", new AjaxOptions() { HttpMethod = "get", UpdateTargetId = "donors" }))
+    {
+        @Html.DropDownList("bloodType", EnumHelper.GetSelectList(typeof(BloodType)), "Select blood type", new { id = "bloodType", @class = "form-control filter-list" })
+        @Html.DropDownList("rhesus", EnumHelper.GetSelectList(typeof(Rhesus)), "Select rhesus", new { id = "rhesus", @class = "form-control filter-list" })
+        @Html.DropDownList("donorStatus", EnumHelper.GetSelectList(typeof(DonorStatus)), "Select status", new { id = "status", @class = "form-control filter-list" })
+        <input class="btn btn-default search-button" type="submit" value="Поиск" />
+    }
+</div>
+@if (User.IsInRole("admin"))
+{
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+}
+
+<div id="donors">
+    @Html.Partial("PartialIndex", Model)
+</div>

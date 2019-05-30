@@ -1,0 +1,67 @@
+﻿@using Clinic.Models
+@model  IEnumerable<Donor>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Surname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BirthDay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CertificationNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BloodType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rhesus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DonorStatus)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Surname)
+            </td>
+            <td>
+                @item.BirthDay.Date.ToShortDateString()
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CertificationNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BloodType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rhesus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DonorStatus)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.Id })
+                @if (User.IsInRole("admin"))
+                {
+                    <text>|</text>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) <text>|</text>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                }
+                |
+                @Html.ActionLink("Blood Test", "Index", "BloodTests", new { id = item.Id }, null)
+            </td>
+        </tr>
+    }
+
+</table>
