@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using RolesIdentityApp.Models;
 
 namespace Clinic.Models
 {
@@ -23,6 +24,7 @@ namespace Clinic.Models
         public ApplicationDbContext()
             : base("ClinicContext", throwIfV1Schema: false)
         {
+            //Database.SetInitializer<ApplicationDbContext>(new AppDbInitializer());
         }
 
         public static ApplicationDbContext Create()
