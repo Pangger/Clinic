@@ -133,6 +133,16 @@ namespace Clinic.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Donor donor = db.Donors.Find(id);
+
+            var bloodTests = db.BloodTests.Where(b => b.DonorId == id).ToList();
+
+            foreach(Blood blood in bloodTests)
+            {
+                db.BloodTests.Remove(blood);
+            }
+
+            db.Entry(donor).Collection(d => d.BloodTests).Load();
+
             db.Donors.Remove(donor);
             db.SaveChanges();
             return RedirectToAction("Index");

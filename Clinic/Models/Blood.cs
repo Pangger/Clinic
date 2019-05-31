@@ -10,7 +10,7 @@ namespace Clinic.Models
 
         [Display(Name = "Дата сдачи анализа")]
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd-mm-yyyy}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime Date { get; set; }
 
         [Display(Name = "Объем")]

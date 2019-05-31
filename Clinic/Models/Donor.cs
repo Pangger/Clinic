@@ -16,8 +16,8 @@ namespace Clinic.Models
         public string Surname { get; set; }
 
         [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Дата рождения")]
-        [DisplayFormat(DataFormatString = "{0:dd-mm-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime BirthDay { get; set; }
 
         [Display(Name = "Пол")]
@@ -40,7 +40,7 @@ namespace Clinic.Models
 
         [DataType(DataType.Date)]
         [Display(Name = "Дата подачи заявки")]
-        [DisplayFormat(DataFormatString = "{0:dd-mm-yyyy}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime DateOfApplication { get; set; }
 
         [Display(Name = "Адрес")]
@@ -48,7 +48,7 @@ namespace Clinic.Models
 
         [Display(Name = "Номер медицинской карты")]
         public string MedicalCardNumber { get; set; }
-        public ICollection<Blood> BloodTests { get; set; }
+        public virtual ICollection<Blood> BloodTests { get; set; }
 
         [Display(Name = "Статус донора")]
         public DonorStatus DonorStatus { get; set; }
