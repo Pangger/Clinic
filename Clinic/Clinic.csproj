@@ -195,6 +195,10 @@
     <Compile Include="Migrations\ClinicMigrations\201905281421101_ChangeType.Designer.cs">
       <DependentUpon>201905281421101_ChangeType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\ClinicMigrations\201906031935568_AddComment.cs" />
+    <Compile Include="Migrations\ClinicMigrations\201906031935568_AddComment.Designer.cs">
+      <DependentUpon>201906031935568_AddComment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ClinicMigrations\ClinicConfig.cs" />
     <Compile Include="Migrations\IdentityMigrations\201905270816138_InitialCreate.cs" />
     <Compile Include="Migrations\IdentityMigrations\201905270816138_InitialCreate.Designer.cs">
@@ -250,9 +254,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -316,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\ClinicMigrations\201905281421101_ChangeType.resx">
       <DependentUpon>201905281421101_ChangeType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ClinicMigrations\201906031935568_AddComment.resx">
+      <DependentUpon>201906031935568_AddComment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\IdentityMigrations\201905270816138_InitialCreate.resx">
       <DependentUpon>201905270816138_InitialCreate.cs</DependentUpon>
