@@ -23,6 +23,5 @@ namespace Clinic.Models
 
         [Display(Name = "Статус анализа")]
         public BloodStatus BloodStatus { get; set; }
-        public string Comment { get; set; }
     }
 }

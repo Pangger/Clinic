@@ -52,6 +52,7 @@ namespace Clinic.Models
 
         [Display(Name = "Статус донора")]
         public DonorStatus DonorStatus { get; set; }
+        public string Comment { get; set; }
 
         public Donor()
         {

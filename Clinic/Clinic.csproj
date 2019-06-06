@@ -199,6 +199,10 @@
     <Compile Include="Migrations\ClinicMigrations\201906031935568_AddComment.Designer.cs">
       <DependentUpon>201906031935568_AddComment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\ClinicMigrations\201906061916324_ReplaceComment.cs" />
+    <Compile Include="Migrations\ClinicMigrations\201906061916324_ReplaceComment.Designer.cs">
+      <DependentUpon>201906061916324_ReplaceComment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ClinicMigrations\ClinicConfig.cs" />
     <Compile Include="Migrations\IdentityMigrations\201905270816138_InitialCreate.cs" />
     <Compile Include="Migrations\IdentityMigrations\201905270816138_InitialCreate.Designer.cs">
@@ -320,6 +324,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\ClinicMigrations\201906031935568_AddComment.resx">
       <DependentUpon>201906031935568_AddComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ClinicMigrations\201906061916324_ReplaceComment.resx">
+      <DependentUpon>201906061916324_ReplaceComment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\IdentityMigrations\201905270816138_InitialCreate.resx">
       <DependentUpon>201905270816138_InitialCreate.cs</DependentUpon>
