@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Clinic.Models.Blood">
+    <Position X="10.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAQAAABAAAAAEACAAAAAAAABAAQAAAAAAAA=</HashCode>
+      <FileName>Models\Blood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clinic.Models.Donor">
+    <Position X="9" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIEACAAAACAAAAAQAQABAgIAAAAABDAIBCAAAA=</HashCode>
+      <FileName>Models\Donor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clinic.Models.ClinicContext">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Models\ClinicContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clinic.Controllers.DonorsController">
+    <Position X="12.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAASAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\DonorsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clinic.Controllers.ManageController">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Clinic.Controllers.ManageController.ManageMessageId" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\ManageController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAABACAQiAAgAAAAEFhAAAAAAEAIMIAAEEEgAAkAAA=</HashCode>
+      <FileName>Controllers\ManageController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clinic.Controllers.BloodTestsController">
+    <Position X="16" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\BloodTestsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clinic.Controllers.AccountController">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Clinic.Controllers.AccountController.ChallengeResult" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\AccountController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAABAChACAAAAAAAAFgEgAABAABMKIAAAMRAAQgAAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Clinic.Models.Enums.BloodStatus">
+    <Position X="3.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAoAAAAAAAAAAgAAAAAAAAIAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\Enums\BloodStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Clinic.Models.Enums.BloodType">
+    <Position X="5.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAQAAAAAAAAIAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Models\Enums\BloodType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Clinic.Models.Enums.Rhesus">
+    <Position X="5.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Models\Enums\BloodType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Clinic.Models.Enums.DonorStatus">
+    <Position X="7.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Enums\DonorStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Clinic.Models.Enums.Gender">
+    <Position X="3.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Models\Enums\Gender.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
